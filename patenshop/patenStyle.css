@@ -1,0 +1,142 @@
+@import url("../style.css");
+
+body {
+    background-image: url("bg.jpg");
+    background-attachment: fixed;
+}
+
+#content {
+    margin-top: 60px;
+    text-align: center;
+}
+
+h1 {
+    padding: 12px;
+}
+
+#headerImg {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+#descriptionBox {
+    background-image: url("shoppingLoewe.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    width: 60%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: antiquewhite;
+    opacity: 0.8;
+
+    >* {
+        padding: 12px;
+    }
+}
+
+#guthabenBereich {
+    text-align: center;
+    padding: 40px;
+    background-color: #82b74b;
+    font-size: 2rem;
+}
+
+#shop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shopObject {
+    margin: 12px;
+    width: 25%;
+}
+
+.shopImg {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 1/1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10%;
+}
+
+.shopDescription {
+    text-align: center;
+}
+
+.shopButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        background-color: transparent;
+        border: none;
+        border-radius: 40px;
+        padding: 6px;
+        margin: 8px;
+    }
+
+    .kaufen:hover {
+        background-color: #82b74b;
+    }
+
+    .verkaufen:hover {
+        background-color: #d56d56;
+    }
+
+    input {
+        width: 40px;
+        padding: 4px;
+    }
+}
+
+#rechnung {
+    display: flex;
+    justify-content: center;
+}
+
+#rechnungsTable {
+    width: 70%;
+    margin: 12px;
+    text-align: center;
+
+    th {
+        border: none;
+        border-collapse: collapse;
+        background-color: #82b74b;
+    }
+
+    th, td {
+        padding: 4px;
+    }
+}
+
+#pGesamtPreis {
+    padding: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: fit-content;
+    margin: 20px auto;
+    background-color: antiquewhite;
+}
+
+.goldborder {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(gold-textured-background.jpg) 30 round;
+}

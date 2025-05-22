@@ -1,0 +1,51 @@
+@import url("../style.css");
+
+/* Hasensimulator */
+#hasensimulator {
+    margin-top: 60px;
+    padding: 14px;
+    max-width: 60vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#hasenMonat {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#hasensimulator .hasenPaar {
+    padding: 8px;
+}
+
+#hasensimulator button {
+    background-color: #82b74b;;
+    color: #405d27;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    padding: 8px;
+    margin: 8px 20px;
+}
+
+#hasensimulator .haseEins {
+    display: inline-block;
+    transform: scaleX(-1); /* spiegeln */
+}
+
+#hasensimulator .smolHeart {
+    font-size: 0.4rem;
+}
+
+#hasenanzeige {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    position: relative;
+    width: 80%;
+    padding: 32px 16px;
+    margin: 20px;
+    background-color: #dbead5;
+    font-size: 1em;
+}

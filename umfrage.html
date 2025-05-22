@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Zoo Naturo - Besucherumfrage">
+  <title>Zoo Naturo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-image: url('assets/otter-7868090_1280.webp'); background-size: cover;">
+  <nav id="header">
+    <ul>
+      <li><a href="index.html#welcome">Start</a></li>
+      <li><a href="index.html#about">Über den Zoo</a></li>
+      <li><a href="index.html#animals">Tierarten</a></li>
+      <li><a href="index.html#visitorinformation">Besucher Info</a></li>
+      <li><a href="hasensimulator/hasensimulator.html">Hasensimulator</a></li>
+      <li><a href="" id="patenshop">Patenshop</a></li>
+    </ul>
+  </nav>
+  <section id="survey">
+    <h1>Besucherumfrage</h1>
+    <form id="umfrage" action="https://intranet.bib.de/screen/web/testmail_get.php" method="get">
+      <div id = "umfrageVisit"  class="boxshadow">
+      <label for="inputVisit"><b>1. Wann haben Sie den Zoo Naturo besucht?</b></label><br>
+      <input type="text" id="inputVisit" name="whenVisited"><br>
+      </div>
+      <div id = "umfrageSatisfaction"  class="boxshadow">
+        <p><b>2. Wie zufrieden waren Sie mit Ihrem Besuch im Zoo Naturo?</b></p>
+        <input type="radio" id="satOne" name="inputSatisfaction" value="1">
+        <label for="satOne">1 - sehr unzufrieden</label><br>
+        <input type="radio" id="satTwo" name="inputSatisfaction" value="2">
+        <label for="satTwo">2 - unzufrieden</label><br>
+        <input type="radio" id="satThree" name="inputSatisfaction" value="3">
+        <label for="satThree">3 - mäßig zufrieden</label><br>
+        <input type="radio" id="satFour" name="inputSatisfaction" value="4">
+        <label for="satFour">4 - zufrieden</label><br>
+        <input type="radio" id="satFive" name="inputSatisfaction" value="5">
+        <label for="satFive">5 - sehr zufrieden</label><br>
+      </div>
+      <div id = "umfrageZooparts"  class="boxshadow">
+        <p><b>2. Welche Bereiche des Zoos haben Ihnen am Besten gefallen?</b></p>
+        <input type="checkbox" id="inputZooparts1" name="inputZooparts1" value="Tiere">
+        <label for="inputZooparts1">Tiere</label><br>
+        <input type="checkbox" id="inputZooparts2" name="inputZooparts2" value="Themenbereiche">
+        <label for="inputZooparts2">Ausstellungen und Themenbereiche</label><br>
+        <input type="checkbox" id="inputZooparts3" name="inputZooparts3" value="Gastronomie">
+        <label for="inputZooparts3">Gastronomie</label><br>
+        <input type="checkbox" id="inputZooparts4" name="inputZooparts4" value="Freizeit">
+        <label for="inputZooparts1">Spielplätze und Freizeitangebote</label><br>
+        <input type="checkbox" id="inputZooparts5" name="inputZooparts5" value="Parken">
+        <label for="inputZooparts2">Parkmöglichkeiten und Anfahrt</label><br>
+        <input type="checkbox" id="inputZooparts6" name="inputZooparts6" value="Personal">
+        <label for="inputZooparts3">Freundlichkeit des Personals</label><br>
+      </div>
+      <div id = "umfrageImprovement"  class="boxshadow">
+        <label for="inputImprovement"><b>4. Haben Sie Verbesserungsvorschläge oder Anregungen für uns?</b></label><br>
+        <input type="text" id="inputImprovement" name="improments"><br>
+      </div>
+      <div id = "umfrageAttention" class="boxshadow">
+        <p><b>5. Wie sind Sie auf den Zoo Naturo aufmerksam geworden?</b></p>
+        <input type="checkbox" id="inputAttention1" name="inputAttention1" value="Freunde">
+        <label for="inputZooparts1">Empfehlungen von Freunden/Familie</label><br>
+        <input type="checkbox" id="inputAttention2" name="inputAttention2" value="SozialeMedien">
+        <label for="inputZooparts2">Soziale Medien</label><br>
+        <input type="checkbox" id="inputAttention3" name="inputAttention3" value="Werbung">
+        <label for="inputZooparts3">Werbung (z.B. Flyer, Plakate)</label><br>
+        <input type="checkbox" id="inputAttention4" name="inputAttention4" value="Website">
+        <label for="inputZooparts1">Website des Zoos</label><br>
+        <input type="checkbox" id="inputAttention5" name="inputAttention5" value="Rezension">
+        <label for="inputZooparts2">Online-Bewertungen</label><br>
+      </div>
+      <div id = "umfrageTicket" class="boxshadow">
+        <p><b>6. Wie war Ihre Erfahrung mit dem Ticketkauf und der Eintrittskontrolle?</b></p>
+        <input type="radio" id="ticketOne" name="inputTicket" value="1">
+        <label for="ticketOne">sehr gut</label><br>
+        <input type="radio" id="ticketTwo" name="inputTicket" value="2">
+        <label for="ticketTwo">gut</label><br>
+        <input type="radio" id="ticketThree" name="inputTicket" value="3">
+        <label for="ticketThree">neutral</label><br>
+        <input type="radio" id="ticketFour" name="inputTicket" value="4">
+        <label for="ticketFour">schlecht</label><br>
+        <input type="radio" id="ticketFive" name="inputTicket" value="5">
+        <label for="ticketFive">sehr schlecht</label><br>
+      </div>
+      <input type="submit" value="Absenden">
+    </form>
+
+  </section>
+
+  <footer>
+    <a href="impressum.html">Impressum</a>
+    <a href="">Datenschutz</a>
+    <a href="">AGB</a>
+    <a href="umfrage.html">Umfrage</a>
+    <a href="hasensimulator/hasensimulator.html">Hasensimulator</a>
+  </footer>
+</body>
+
+</html>

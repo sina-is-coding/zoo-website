@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zoo Naturo">
+    <title>Zoo Naturo</title>
+    <link rel="stylesheet" href="patenStyle.css">
+</head>
+
+<body>
+    <nav id="header">
+        <img src="../assets/zoo.png" alt="logo naturo" class="logo">
+        <ul>
+            <li><a href="../index.html#welcome">Start</a></li>
+            <li><a href="../index.html#about">Über den Zoo</a></li>
+            <li><a href="../index.html#animals">Tierarten</a></li>
+            <li><a href="../index.html#visitorinformation">Besucher Info</a></li>
+            <li><a href="../hasensimulator/hasensimulator.html">Hasensimulator</a></li>
+            <li><a href="patenshop.html" id="patenshop">Patenshop</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <h1>Patenshop</h1>
+        <div id="descriptionBox">
+            <div id="description">
+                <p>In unserem Zoo-Shop findest du tolle Produkte – von Tier-Merch bis hin zu nachhaltigen Alltagsartikeln. Und das Beste: Mit jedem Kauf unterstützt du unseren Zoo!</p>
+                <b>So funktioniert’s:</b>
+                <p>Du kaufst ganz normale Produkte – für dich selbst oder als Geschenk.</p>
+                <p>Ein Teil des Erlöses wird automatisch an den Zoo gespendet.</p>
+                <p>Deine Spende hilft direkt bei der Versorgung unserer Tiere, der Pflege ihrer Lebensräume und dem Erhalt unseres Zoos.</p>
+                <p>Ob du dir selbst eine Freude machst oder jemandem eine tierisch gute Überraschung bereitest – du trägst gleichzeitig zum Schutz und Wohl unserer Tiere bei.</p>
+                <p>Danke, dass du mit deinem Einkauf einen Unterschied machst!</p>
+            </div>
+        </div>
+        
+        <div id="guthabenBereich">
+            <p>Dein Guthaben beträgt: <span id="guthaben"></span> €</p>
+        </div>
+        <div id="shop">
+            <!-- Shopobjekte werden per JavaScript erstellt -->
+        </div>
+        <div id="rechnung">
+            <table id="rechnungsTable">
+                <tr>
+                    <th>Anzahl</th>
+                    <th>Beschreibung</th>
+                    <th>Preis</th>
+                </tr>
+            </table>
+        </div>
+        <p id="pGesamtPreis"><b>Gesamtpreis: </b><span id="gesamtPreis">0.00€</span></p>
+    </div>
+    <footer>
+        <a href="../impressum.html">Impressum</a>
+        <a href="">Datenschutz</a>
+        <a href="">AGB</a>
+        <a href="../umfrage.html">Umfrage</a>
+        <a href="../hasensimulator/hasensimulator.html">Hasensimulator</a>
+        <a href="patenshop.html">Patenshop</a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="patenshop.js"></script>
+</body>
+
+</html>

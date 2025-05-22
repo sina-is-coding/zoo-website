@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zoo Naturo">
+    <title>Zoo Naturo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="header">
+        <img src="assets/zoo.png" alt="logo naturo" class="logo">
+        <ul>
+            <li><a href="index.html#welcome">Start</a></li>
+            <li><a href="index.html#about">Über den Zoo</a></li>
+            <li><a href="index.html#animals">Tierarten</a></li>
+            <li><a href="index.html#visitorinformation">Besucher Info</a></li>
+            <li><a href="hasensimulator/hasensimulator.html">Hasensimulator</a></li>
+            <li><a href="patenshop/patenshop.html" id="patenshop">Patenshop</a></li>
+        </ul>
+    </nav>
+
+    <div id="popup" class="boxshadow">
+        <p>Nehmen Sie an unserer <a href="umfrage.html">Umfrage</a> teil!</p>
+    </div>
+    <a id="patenshop_popup" href="patenshop/patenshop.html" class="tooltip_shop">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#82b74b" class="bi bi-bag-heart-fill"
+            viewBox="0 0 16 16">
+            <path
+                d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+        </svg>
+        <span class="tooltiptext_shop boxshadow">Hier geht's zu unserem Patenshop!</span>
+    </a>
+
+    <section id="welcome" class="oddSection">
+        <div class="boxshadow">
+            <h1>Willkommen</h1>
+            <h2>Willkommen im Tierpark Naturo!</h2>
+            <p>Entdecken Sie die faszinierende Welt der Tiere!
+                Besuchen Sie unsere einzigartige Tierwelt und erleben Sie unvergessliche Momente.
+                Egal, ob Sie die majestätischen Löwen bestaunen, mit unseren verspielten Ottern lachen oder sich von den
+                farbenprächtigen Papageien verzaubern lassen
+                – bei uns findet jeder sein persönliches Highlight.</p>
+        </div>
+    </section>
+
+    <section id="about" class="evenSection">
+        <div class="boxshadow">
+            <h1>Über den Zoo</h1>
+            <h2>Geschichte und Mission</h2>
+            <p>Der Tierpark Naturo wurde 1965 gegründet und widmet sich seitdem dem Schutz
+                bedrohter Tierarten und der Bildung seiner Besucher. Unsere Mission ist es,
+                ein Bewusstsein für den Schutz der Natur und den Erhalt der Artenvielfalt zu
+                schaffen. Mit einem besonderen Fokus auf Artenschutz und nachhaltige Zooarbeit
+                setzen wir uns weltweit für bedrohte Tierarten ein.</p>
+            <h2>Unser Team</h2>
+            <p>Unser engagiertes Team besteht aus erfahrenen Tierpflegern, Biologen und Naturfreunden,
+                die mit Leidenschaft und Hingabe dafür sorgen, dass sich die Tiere in unserem Park
+                wohlfühlen und die Besucher spannende Einblicke in die faszinierende Tierwelt gewinnen.
+                Jeder Einzelne von uns trägt dazu bei, den Tierpark als Ort des Lernens,
+                Staunens und des respektvollen Umgangs mit der Natur zu gestalten.
+                Gemeinsam setzen wir uns für den Schutz und die Erhaltung der Tiere und ihrer
+                Lebensräume ein.</p>
+        </div>
+    </section>
+
+    <section id="storytelling" class="oddSection">
+        <div class="flashcard boxshadow">
+            <div class="flashcardPic"><img src="assets/lioness-1634673_640.jpg" alt="storytellImg" class="flashcardPic"
+                    id="storytellImg">
+            </div>
+            <div class="flashcardText" id="storytellText">
+                <p>Unsere Löwin Nala ist ein echtes Kraftpaket mit sanftem Blick. Sie verbringt ihre Tage gern entspannt
+                    auf ihrem Aussichtspunkt, wo sie ihre Umgebung im Blick behält. Besucher spüren oft sofort: Hier
+                    ruht eine Königin – selbstbewusst, stolz und gelassen.</p>
+                <button id="buttonStorytell" onclick="storytellNext();">mehr</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="hoverImgCards" class="evenSection">
+        <div class="hoverContainer">
+            <img src="assets/otter-7868090_1280.webp" alt="otter" class="hoverImg boxshadow">
+            <div class="hoverTextDiv">
+                <p>Begrüßen Sie unseren freundlichen Otter Otto bei uns!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="animals" class="oddSection">
+        <div>
+            <h1>Tierarten</h1>
+
+            <div class="flashcard boxshadow">
+                <div class="flashcardText">
+                    <h2>Tierverzeichnis</h2>
+                    <p>Entdecken Sie die faszinierenden Bewohner unseres Zoos – von majestätischen
+                        Raubkatzen und gemütlichen Pflanzenfressern bis zu bunten Exoten.
+                        Unsere Tierwelt umfasst Tiere aus allen Kontinenten und Lebensräumen.</p>
+                </div>
+                <div>
+                    <img src="assets/elephant-7036431_1280.jpg" alt="elephant" class="flashcardPic">
+                    <div class="overlay">faszinierende Bewohner in unserem Zoo!</div>
+                </div>
+            </div>
+
+            <div class="flashcard boxshadow">
+                <div>
+                    <img src="assets/polar-bear-6951677_1280.jpg" alt="polarbear" class="flashcardPic">
+                </div>
+                <div class="overlay">Pflege rund um die Uhr!</div>
+                <div class="flashcardText">
+                    <h2>Verhalten und Pflege</h2>
+                    <p>Unsere Tierpfleger sind rund um die Uhr für die Pflege und das Wohl der Tiere
+                        im Einsatz. Mit speziell auf die Bedürfnisse jeder Art zugeschnittenen Programmen
+                        und Gehegen bieten wir unseren Tieren eine naturnahe und artgerechte Umgebung.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="visitorinformation" class="evenSection">
+        <div class="boxshadow">
+            <h1>Besucherinformation</h1>
+            <h2>Öffnungszeiten und Preise</h2>
+            <p>Täglich von 9:00 bis 18:00 Uhr (letzter Einlass 17:00 Uhr)</p>
+            <h2>Eintrittspreise</h2>
+            <ul>
+                <li>Erwachsene: 15€</li>
+                <li>Kinder (3-4 Jahre): 8€</li>
+                <li>Familienkarte: 40€</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <a href="impressum.html">Impressum</a>
+        <a href="">Datenschutz</a>
+        <a href="">AGB</a>
+        <a href="umfrage.html">Umfrage</a>
+        <a href="patenshop/patenshop.html">Patenshop</a>
+        <a href="hasensimulator/hasensimulator.html">Hasensimulator</a>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

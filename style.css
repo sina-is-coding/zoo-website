@@ -1,0 +1,379 @@
+/* Allgemeine Styles*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* width mit padding und border inklusive*/
+    font-family: sans-serif;
+    color: #3e4444;
+}
+
+/* Navigation */
+nav {
+    padding: 30px;
+    background-color: #405d27;
+    text-align: left;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    /*removing the bullet points*/
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+nav li {
+    display: inline;
+    /*changing li from block-element to inline*/
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav #patenshop {
+    color: black;
+    background-color: #82b74b;
+    padding: 12px;
+    border-radius: 20px;
+}
+
+nav #patenshop:hover {
+    background-color: #c1946a;
+    color: #405d27;
+}
+
+nav .logo {
+    height: 80%;
+    position: absolute;
+    left: 10px;
+    top: 10%
+}
+
+
+/* Section Design*/
+section {
+    padding: 70px;
+}
+
+section div {
+    min-height: 50px;
+}
+
+section h1 {
+    font-size: 2.4em;
+    color: #82b74b;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+section h2 {
+    font-size: 1.3em;
+    color: #405d27;
+    padding-bottom: 8px;
+    padding-top: 14px;
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+.evenSection {
+    background-color: whitesmoke;
+}
+
+.oddSection {
+    background-color: #e8d8c9;
+}
+
+/* footer */
+footer {
+    height: 200px;
+    background-color: #3e4444;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.flashcard {
+    display: flex;
+    position: relative;
+    padding: 0px;
+    margin: 40px;
+    background-color: aliceblue;
+    font-size: 1em;
+}
+
+.flashcardText {
+    padding: 20px;
+    width: 100%;
+}
+
+.flashcardPic {
+    width: 100%;
+    height: 100%;
+}
+
+#popup {
+    position: fixed;
+    top: 80px;
+    right: 60px;
+    width: 200px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+#popup p {
+    padding: 8px;
+    font-size: 1rem;
+}
+
+#popup a {
+    color: #82b74b;
+    text-decoration: none;
+}
+
+#popup a:hover {
+    text-decoration: underline;
+}
+
+#patenshop_popup {
+    z-index: 2000;
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+}
+
+#patenshop_popup svg {
+    filter: drop-shadow(0 0 4px #000);
+}
+
+.tooltip_shop .tooltiptext_shop {
+    visibility: hidden;
+    background-color: #fff;
+    color: #82b74b;
+    text-align: center;
+    width: 120px;
+    padding: 6px;
+    border-radius: 4px;
+
+    position: absolute;
+    top: -50%;
+    left: 105%;
+    margin-left: 12px;
+}
+
+.tooltip_shop:hover .tooltiptext_shop {
+    visibility: visible;
+}
+
+/* section specific */
+#welcome {
+    display: flex;
+    align-items: baseline;
+    background-image: url(assets/ZoobannerLöweGroß.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    position: relative;
+    margin-top: 60px;
+}
+
+#welcome div {
+    background-color: antiquewhite;
+    padding: 30px;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#about div {
+    background-color: antiquewhite;
+    width: 80%;
+    padding: 25px;
+}
+
+#storytelling div {
+    background-color: white;
+    padding: 0.5rem;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#storytelling .flashcardText {
+    display: block;
+}
+
+#storytelling button {
+    background-color: #405d27;
+    color: white;
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+
+#hoverImgCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#hoverImgCards .hoverContainer {
+    width: 50%;
+}
+
+#hoverImgCards img {
+    width: 100%;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+#hoverImgCards:hover img {
+    opacity: 0.3;
+}
+
+#hoverImgCards .hoverTextDiv {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+}
+
+#hoverImgCards:hover .hoverTextDiv {
+    opacity: 1;
+}
+
+#hoverImgCards p {
+    color: white;
+    background-color: #405d27;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+#animals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#animals .flashcard {
+    width: 60%;
+    margin: 40px auto;
+}
+
+#animals .flashcardPic {
+    aspect-ratio: 1/1;
+}
+
+#animals .flashcardText {
+    aspect-ratio: 1/1;
+    overflow: scroll;
+}
+
+#animals .flashcard:hover .overlay {
+    opacity: 1;
+}
+
+#animals div .flashcard div {
+    width: 50%;
+}
+
+
+#animals .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#visitorinformation {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#visitorinformation div {
+    background-color: antiquewhite;
+    padding: 40px;
+}
+
+.boxshadow {
+    box-shadow: 0 4px 8px 0 black, 0 4px 8px 0 black;
+}
+
+/* Umfrage */
+
+#survey div {
+    padding: 18px;
+    margin: 8px;
+    border: 2px solid grey;
+    border-radius: 4px;
+    background-color: white;
+}
+
+#survey input[type=text] {
+    margin: 8px;
+    width: 100%;
+}
+
+#survey p {
+    margin-bottom: 8px;
+}
+
+#survey input[type=submit] {
+    box-shadow: 0 1px 1px 0 black, 0 1px 1px 0 black;
+    position: absolute;
+    left: 150px;
+    background-color: #82b74b;
+    border-radius: 8px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
